@@ -1,0 +1,85 @@
+{
+  "name": "timplexzz",
+  "version": "1.0.1",
+  "description": "A simple but yet powerful typeahead json/http component for Angular",
+  "main": "./bundles/timplexzz.umd.js",
+  "module": "./esm5/timplexzz.js",
+  "es2015": "./esm2015/timplexzz.js",
+  "scripts": {
+    "build": "npx node build.js",
+    "test": "karma start",
+    "test:watch": "karma start --single-run=false",
+    "pack:lib": "npm pack ./dist",
+    "publish:lib": "npm publish --access ./dist",
+    "publish:lib:next": "npm run build && npm publish --tag next ./dist",
+    "compodoc": "compodoc -p tsconfig.json",
+    "compodoc-serve": "compodoc -s",
+    "transpile": "ngc -p ./tsconfig.json"
+  },
+  "typings": "./timplexzz.d.ts",
+  "author": "wawanahayy (wawanxkok1@gmail.com)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Wawanahayy/timplexzz.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Wawanahayy/timplexzz/issues"
+  },
+  "homepage": "https://github.com/Wawanahayy/timplexzz/issues",
+  "keywords": [
+    "angular",
+    "javascript",
+    "typescript",
+    "typeahead",
+    "jsonp",
+    "ui component"
+  ],
+  "license": "MIT",
+  "peerDependencies": {
+    "@angular/common": "6.0.0",
+    "@angular/core": "6.0.0"
+  },
+  "dependencies": {
+    "tslib": "^1.7.1"
+  },
+  "devDependencies": {
+    "@angular/animations": "6.0.0",
+    "@angular/common": "6.0.0",
+    "@angular/compiler": "6.0.0",
+    "@angular/compiler-cli": "6.0.0",
+    "@angular/core": "6.0.0",
+    "@angular/http": "6.0.0",
+    "@angular/platform-browser": "6.0.0",
+    "@angular/platform-browser-dynamic": "6.0.0",
+    "@angular/platform-server": "6.0.0",
+    "@compodoc/compodoc": "1.0.3",
+    "@types/jasmine": "2.6.2",
+    "@types/node": "8.0.47",
+    "chalk": "2.3.0",
+    "codelyzer": "4.0.2",
+    "core-js": "2.5.1",
+    "istanbul-instrumenter-loader": "3.0.0",
+    "jasmine-core": "2.8.0",
+    "karma": "1.7.1",
+    "karma-chrome-launcher": "2.2.0",
+    "karma-coverage-istanbul-reporter": "1.3.0",
+    "karma-jasmine": "1.1.0",
+    "karma-sourcemap-loader": "0.3.7",
+    "karma-spec-reporter": "0.0.30",
+    "karma-webpack": "2.0.5",
+    "reflect-metadata": "0.1.10",
+    "rollup": "0.50.0",
+    "rollup-plugin-license": "0.6.0",
+    "rollup-plugin-node-resolve": "3.0.0",
+    "rollup-plugin-sourcemaps": "0.4.2",
+    "rxjs": "6.1.0",
+    "shelljs": "0.7.8",
+    "source-map-loader": "0.2.3",
+    "ts-loader": "3.1.1",
+    "tslint": "5.8.0",
+    "typescript": "2.7.2",
+    "uglify-js": "3.1.6",
+    "webpack": "3.8.1",
+    "zone.js": "0.8.18"
+  }
+}
