@@ -4,3 +4,6 @@ $ npm init
   ...
   test command: exit 0
   ...
+"publishConfig": {
+  "wawanahayy:registry": "https://npm.pkg.github.com"
+}
